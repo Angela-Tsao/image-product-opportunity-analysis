@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Mobile Imaging Market Analysis · 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Instrument+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #13131a;
+    --surface2: #1c1c26;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8e6f0;
+    --muted: rgba(232,230,240,0.45);
+    --accent: #7c6af7;
+    --accent2: #f7a26a;
+    --accent3: #6af7c8;
+    --accent4: #f76a8a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Instrument Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.75; overflow-x: hidden; }
+
+  /* COVER */
+  .cover { min-height: 100vh; display: grid; grid-template-rows: 1fr auto; padding: 80px 100px; position: relative; overflow: hidden; }
+  .cover-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(124,106,247,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(124,106,247,0.04) 1px, transparent 1px); background-size: 60px 60px; }
+  .cover-glow { position: absolute; top: -200px; right: -200px; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(124,106,247,0.12) 0%, transparent 65%); }
+  .cover-glow2 { position: absolute; bottom: -100px; left: -100px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(106,247,200,0.07) 0%, transparent 65%); }
+  .cover-content { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; }
+  .cover-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+  .cover-eyebrow-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); border: 1px solid rgba(124,106,247,0.3); padding: 4px 12px; border-radius: 20px; }
+  .cover-eyebrow-line { flex: 1; height: 1px; background: linear-gradient(90deg, rgba(124,106,247,0.3), transparent); }
+  .cover h1 { font-family: 'Playfair Display', serif; font-size: 68px; line-height: 1.05; max-width: 800px; margin-bottom: 8px; background: linear-gradient(135deg, #e8e6f0 0%, rgba(232,230,240,0.6) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .cover-year { font-family: 'Playfair Display', serif; font-size: 68px; line-height: 1.05; color: var(--accent); font-style: italic; margin-bottom: 32px; }
+  .cover-desc { font-size: 16px; color: var(--muted); max-width: 560px; font-weight: 300; line-height: 1.8; margin-bottom: 56px; }
+  .cover-stats { display: flex; gap: 48px; }
+  .cover-stat label { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
+  .cover-stat span { font-size: 14px; color: var(--text); font-weight: 500; }
+  .cover-footer { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: flex-end; padding-top: 40px; border-top: 1px solid var(--border); font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 1px; }
+
+  /* LAYOUT */
+  .page { max-width: 980px; margin: 0 auto; padding: 100px 60px; }
+  .section-tag { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .section-tag::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(124,106,247,0.3), transparent); }
+  .section-title { font-family: 'Playfair Display', serif; font-size: 40px; line-height: 1.2; margin-bottom: 16px; }
+  .section-subtitle { font-size: 15px; color: var(--muted); max-width: 660px; line-height: 1.8; margin-bottom: 48px; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 80px 0; }
+
+  /* CONTEXT BOX */
+  .context-box { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 48px; margin-bottom: 40px; position: relative; overflow: hidden; }
+  .context-box::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent3), var(--accent2)); }
+  .context-box p { font-size: 15px; color: var(--muted); line-height: 1.9; max-width: 800px; }
+  .context-box p strong { color: var(--text); font-weight: 600; }
+
+  /* ROLE BREAKDOWN */
+  .role-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0; }
+  .role-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 28px; }
+  .role-card-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+  .label-mine { color: var(--accent3); }
+  .label-team { color: var(--muted); }
+  .role-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+  .role-card p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+  /* THE FRAMEWORK - HERO SECTION */
+  .framework-hero { background: var(--surface2); border: 1px solid rgba(124,106,247,0.2); border-radius: 20px; padding: 56px; margin: 40px 0; position: relative; overflow: hidden; }
+  .framework-hero::before { content: ''; position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(124,106,247,0.08) 0%, transparent 65%); }
+  .framework-hero-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+  .framework-hero h3 { font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 20px; color: var(--text); position: relative; z-index: 1; }
+  .framework-hero .rationale { font-size: 15px; color: var(--muted); line-height: 1.85; max-width: 700px; margin-bottom: 48px; position: relative; z-index: 1; }
+  .framework-hero .rationale strong { color: var(--text); }
+
+  .triangle-viz { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; position: relative; z-index: 1; }
+  .tri-node { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px 24px; text-align: center; position: relative; }
+  .tri-node.active { border-color: rgba(124,106,247,0.35); background: rgba(124,106,247,0.06); }
+  .tri-node-icon { font-size: 28px; margin-bottom: 14px; display: block; }
+  .tri-node h4 { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+  .tri-node .tri-node-alone { font-size: 11.5px; color: var(--accent4); font-style: italic; line-height: 1.55; margin-bottom: 10px; }
+  .tri-node p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+
+  .triangle-conclusion { margin-top: 24px; background: rgba(106,247,200,0.06); border: 1px solid rgba(106,247,200,0.15); border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; position: relative; z-index: 1; }
+  .tri-arrow { font-size: 20px; color: var(--accent3); flex-shrink: 0; }
+  .triangle-conclusion p { font-size: 13.5px; color: var(--text); line-height: 1.65; }
+  .triangle-conclusion p em { color: var(--accent3); font-style: normal; font-weight: 600; }
+
+  /* DATA PIPELINE */
+  .pipeline { margin: 40px 0; display: flex; flex-direction: column; gap: 0; }
+  .pipeline-step { display: grid; grid-template-columns: 200px 1fr; gap: 0; }
+  .pipeline-left { padding: 28px 32px 28px 0; border-right: 2px solid var(--border); position: relative; display: flex; flex-direction: column; align-items: flex-end; }
+  .pipeline-left::after { content: ''; position: absolute; right: -5px; top: 36px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+  .pipeline-step-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--accent); letter-spacing: 2px; margin-bottom: 6px; }
+  .pipeline-step-name { font-size: 12px; font-weight: 600; text-align: right; color: var(--text); line-height: 1.4; }
+  .pipeline-right { padding: 24px 0 24px 32px; }
+  .pipeline-right p { font-size: 13px; color: var(--muted); line-height: 1.75; }
+  .pipeline-right .challenge { margin-top: 10px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: rgba(247,162,106,0.7); }
+  .pipeline-right .challenge::before { content: '⚠ '; }
+
+  /* CROSS-MARKET */
+  .crossmarket { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 48px; margin: 40px 0; }
+  .market-flags { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+  .market-flag { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 16px; font-size: 12px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+  .market-flag.highlight { border-color: rgba(124,106,247,0.3); color: var(--accent); background: rgba(124,106,247,0.07); }
+  .crossmarket p { font-size: 14px; color: var(--muted); line-height: 1.8; max-width: 760px; }
+  .crossmarket p strong { color: var(--text); }
+
+  /* KEY INSIGHTS */
+  .insights { margin: 40px 0; display: flex; flex-direction: column; gap: 20px; }
+  .insight-card { border: 1px solid var(--border); border-radius: 14px; padding: 32px; background: var(--surface); display: grid; grid-template-columns: 4px 1fr; gap: 24px; }
+  .insight-bar { border-radius: 4px; }
+  .bar-purple { background: var(--accent); }
+  .bar-teal   { background: var(--accent3); }
+  .bar-orange { background: var(--accent2); }
+  .insight-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 10px; color: var(--text); }
+  .insight-card p { font-size: 13px; color: var(--muted); line-height: 1.75; }
+  .insight-card .so-what { margin-top: 12px; font-size: 12.5px; color: var(--accent3); font-style: italic; }
+  .insight-card .so-what::before { content: 'So what → '; font-style: normal; font-weight: 600; }
+
+  /* IMPACT */
+  .impact-statement { background: linear-gradient(135deg, rgba(124,106,247,0.08) 0%, rgba(106,247,200,0.05) 100%); border: 1px solid rgba(124,106,247,0.2); border-radius: 20px; padding: 56px; margin: 40px 0; position: relative; overflow: hidden; }
+  .impact-statement::after { content: '"'; position: absolute; right: 40px; top: -20px; font-family: 'Playfair Display', serif; font-size: 200px; color: rgba(124,106,247,0.04); line-height: 1; }
+  .impact-statement p { font-family: 'Playfair Display', serif; font-size: 21px; line-height: 1.7; color: var(--text); max-width: 720px; font-style: italic; position: relative; z-index: 1; }
+  .impact-statement p strong { color: var(--accent3); font-style: normal; }
+  .impact-statement p em { color: var(--accent2); font-style: normal; }
+
+  /* SKILLS */
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 40px 0; }
+  .skills-block h4 { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+  .skill-list { display: flex; flex-direction: column; gap: 10px; }
+  .skill-item { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--text); }
+  .skill-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .dot-a { background: var(--accent); }
+  .dot-b { background: var(--accent3); }
+
+  /* FOOTER */
+  .doc-footer { background: var(--surface); border-top: 1px solid var(--border); padding: 40px 100px; display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 1px; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-grid"></div>
+  <div class="cover-glow"></div>
+  <div class="cover-glow2"></div>
+  <div class="cover-content">
+
+    <h1>Global Mobile Imaging<br>Market Analysis</h1>
+    <div class="cover-year">2025</div>
+    <p class="cover-desc">Designed and executed a competitive opportunity analysis across 690+ imaging products in 7+ markets — building an original three-dimensional growth framework to identify where the industry's next structural bets should be placed.</p>
+    <div class="cover-stats">
+      <div class="cover-stat"><label>Duration</label><span>~2 Months</span></div>
+      <div class="cover-stat"><label>Products Analyzed</label><span>690+</span></div>
+      <div class="cover-stat"><label>Markets</label><span>7+ Regions</span></div>
+      <div class="cover-stat"><label>Outcome</label><span>Roadmap Adopted</span></div>
+    </div>
+  </div>
+  <div class="cover-footer">
+    <span>Methodology only · All proprietary figures anonymized</span>
+    <span>Angela · Incoming MSBA @ UW Foster 2026</span>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="page">
+
+  <!-- CONTEXT -->
+  <div class="section-tag">Section 01 · Business Problem</div>
+  <div class="section-title">What We Were Trying to Answer</div>
+  <p class="section-subtitle">The product team needed a systematic answer to one question: in a market being disrupted by generative AI, where should we invest next?</p>
+
+  <div class="context-box">
+    <p>The global mobile imaging market in 2025 was undergoing a structural shift. Traditional photo and video editing products — which historically drove the majority of revenue — were showing signs of user growth stagnation. Meanwhile, generative AI was delivering triple-digit growth in both users and monetization. <strong>The business needed more than a market overview. It needed a framework for deciding which product directions were genuinely worth investing in — and which were trend noise.</strong></p>
+  </div>
+
+  <!-- ROLE -->
+  <div class="section-tag">Section 02 · My Role</div>
+  <div class="section-title">What I Owned vs. What Was Collaborative</div>
+  <p class="section-subtitle">Being precise about contribution is important. Here's how the work was divided.</p>
+
+  <div class="role-grid">
+    <div class="role-card">
+      <div class="role-card-label label-mine">My Contribution</div>
+      <h4>Analytical Framework Design</h4>
+      <p>Designed the "Impossible Triangle" three-dimensional growth framework — the core analytical logic that determined which product directions were flagged as genuine opportunities vs. single-dimension wins.</p>
+    </div>
+    <div class="role-card">
+      <div class="role-card-label label-mine">My Contribution</div>
+      <h4>Full Data Pipeline</h4>
+      <p>Pulled, cleaned, and structured 690+ product records from SensorTower across download, MAU, DAU, and revenue dimensions. Built the analysis-ready dataset from scratch.</p>
+    </div>
+    <div class="role-card">
+      <div class="role-card-label label-mine">My Contribution</div>
+      <h4>Quantitative Analysis & Insights</h4>
+      <p>Executed the full cross-dimensional analysis across 48 product sub-directions. Identified divergence patterns between download growth, engagement depth, and monetization efficiency.</p>
+    </div>
+    <div class="role-card">
+      <div class="role-card-label label-team">Collaborative</div>
+      <h4>Competitive Deep-Dive</h4>
+      <p>Product-level competitive analysis and filter opportunity mapping conducted jointly with regional teams across US, Japan, Korea, Thailand, Vietnam, Brazil, and Indonesia — incorporating local market context that data alone couldn't capture.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- THE FRAMEWORK - HERO -->
+  <div class="section-tag">Section 03 · The Core Analytical Contribution</div>
+  <div class="section-title">Designing the "Impossible Triangle" Framework</div>
+
+  <div class="framework-hero">
+    <div class="framework-hero-label">Original Framework · Designed by Analyst</div>
+    <h3>Why one growth dimension is never enough</h3>
+    <p class="rationale">
+      Standard market analyses tend to rank product categories by a single metric — usually downloads or revenue. The problem: <strong>a category can look healthy on one axis while quietly dying on another.</strong> High downloads with no monetization is a trend. Strong revenue with declining users is a sunset. High engagement with no new users is a ceiling.<br><br>
+      The "Impossible Triangle" framework was designed to solve this by requiring a product direction to demonstrate simultaneous top-performance across all three growth engines before being flagged as a genuine opportunity.
+    </p>
+
+    <div class="triangle-viz">
+      <div class="tri-node active">
+        <span class="tri-node-icon">📥</span>
+        <h4>New User Acquisition</h4>
+        <div class="tri-node-alone">Alone: Could be a passing trend. No durability signal.</div>
+        <p>Download growth indicates that new users are actively discovering and choosing this product direction over alternatives.</p>
+      </div>
+      <div class="tri-node active">
+        <span class="tri-node-icon">🔁</span>
+        <h4>Active Engagement</h4>
+        <div class="tri-node-alone">Alone: Users come but won't pay. Value proposition unclear.</div>
+        <p>DAU growth indicates that users are returning habitually — the product has embedded itself into a real behavioral routine.</p>
+      </div>
+      <div class="tri-node active">
+        <span class="tri-node-icon">💰</span>
+        <h4>Monetization</h4>
+        <div class="tri-node-alone">Alone: Extracting from an aging base. Growth ceiling approaching.</div>
+        <p>Revenue growth indicates users are willing to pay — confirming genuine value delivery, not just entertainment or novelty.</p>
+      </div>
+    </div>
+
+    <div class="triangle-conclusion">
+      <div class="tri-arrow">△</div>
+      <p>A direction that ranks in the top 10 across <em>all three dimensions simultaneously</em> signals structural demand — not a trend spike, not extraction from a shrinking base. These are the directions worth betting on.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- DATA PIPELINE -->
+  <div class="section-tag">Section 04 · Technical Execution</div>
+  <div class="section-title">From Raw Data to Analysis-Ready</div>
+  <p class="section-subtitle">Before any insight could be generated, 690+ products of messy external data needed to be transformed into a structured, comparable dataset.</p>
+
+  <div class="pipeline">
+    <div class="pipeline-step">
+      <div class="pipeline-left">
+        <div class="pipeline-step-num">STEP 01</div>
+        <div class="pipeline-step-name">Data Extraction</div>
+      </div>
+      <div class="pipeline-right">
+        <p>Pulled performance data for 690+ products from SensorTower across four metrics: downloads, MAU, DAU, and revenue. Data extracted for both current period and prior year to enable YoY growth calculation across all dimensions.</p>
+      </div>
+    </div>
+    <div class="pipeline-step">
+      <div class="pipeline-left">
+        <div class="pipeline-step-num">STEP 02</div>
+        <div class="pipeline-step-name">Cleaning & Normalization</div>
+      </div>
+      <div class="pipeline-right">
+        <p>Standardized inconsistent product categorizations, handled missing values for products with limited historical data, and reconciled metric definitions across different product types (subscription vs. ad-supported products report revenue differently in SensorTower).</p>
+        <div class="challenge">Key challenge: products with different monetization models required metric normalization before meaningful comparison</div>
+      </div>
+    </div>
+    <div class="pipeline-step">
+      <div class="pipeline-left">
+        <div class="pipeline-step-num">STEP 03</div>
+        <div class="pipeline-step-name">Sub-direction Mapping</div>
+      </div>
+      <div class="pipeline-right">
+        <p>Mapped each of the 690+ products to one of 48 product sub-directions defined by the product team (based on primary user mental model). Calculated aggregate metrics per sub-direction to enable category-level analysis rather than individual product comparison.</p>
+      </div>
+    </div>
+    <div class="pipeline-step">
+      <div class="pipeline-left">
+        <div class="pipeline-step-num">STEP 04</div>
+        <div class="pipeline-step-name">Framework Application</div>
+      </div>
+      <div class="pipeline-right">
+        <p>Applied the Impossible Triangle framework across all 48 sub-directions — ranking each on download growth delta, DAU growth delta, and revenue growth delta independently, then identifying which directions achieved simultaneous top-10 ranking across all three.</p>
+      </div>
+    </div>
+    <div class="pipeline-step">
+      <div class="pipeline-left">
+        <div class="pipeline-step-num">STEP 05</div>
+        <div class="pipeline-step-name">Portfolio Gap Analysis</div>
+      </div>
+      <div class="pipeline-right">
+        <p>Cross-referenced high-opportunity sub-directions against the existing product portfolio to identify where competitive gaps existed — specifically which Impossible Triangle directions had no strong incumbent, or where the existing product had fallen behind market-leading competitors.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CROSS MARKET -->
+  <div class="section-tag">Section 05 · Cross-Market Validation</div>
+  <div class="section-title">Why Numbers Alone Weren't Enough</div>
+
+  <div class="crossmarket">
+    <p>Quantitative signals identify <strong>what</strong> is growing — but not <strong>why</strong>, and not whether the growth is replicable across markets. For the highest-opportunity sub-directions identified by the framework, the analysis was extended through structured collaborative sessions with regional teams across seven markets.</p>
+
+    <div class="market-flags">
+      <div class="market-flag highlight">🇺🇸 United States</div>
+      <div class="market-flag highlight">🇯🇵 Japan</div>
+      <div class="market-flag highlight">🇰🇷 Korea</div>
+      <div class="market-flag highlight">🇹🇭 Thailand</div>
+      <div class="market-flag highlight">🇻🇳 Vietnam</div>
+      <div class="market-flag highlight">🇮🇩 Indonesia</div>
+      <div class="market-flag highlight">🇧🇷 Brazil</div>
+    </div>
+
+    <p>Each regional session surfaced local context that quantitative data couldn't capture: <strong>which social platforms were driving specific aesthetic trends, which competitor products had strong local brand equity, and what cultural preferences shaped feature reception.</strong> This prevented the common failure mode of making global product decisions based on aggregate numbers that mask fundamentally different regional dynamics.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- KEY INSIGHTS -->
+  <div class="section-tag">Section 06 · What the Analysis Revealed</div>
+  <div class="section-title">Three Insights That Shaped the Recommendation</div>
+
+  <div class="insights">
+    <div class="insight-card">
+      <div class="insight-bar bar-purple"></div>
+      <div>
+        <h4>Download growth and monetization growth are structurally decoupled in mobile imaging</h4>
+        <p>The highest-download sub-directions consistently showed weak monetization. The highest-revenue growth sub-directions showed moderate-to-low download growth. This is not a temporary imbalance — it reflects fundamentally different user intent between "try this trend" behavior and "I will pay for this" behavior. Most market analyses pick one dimension and miss this split entirely.</p>
+        <div class="so-what">separate acquisition strategy from monetization strategy. Optimizing for downloads in a monetization-weak direction is resource misallocation.</div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-bar bar-teal"></div>
+      <div>
+        <h4>In camera products, competitive moats are built at the asset level, not the app level</h4>
+        <p>Users in the retro camera sub-direction don't have loyalty to apps — they have loyalty to specific filter names and specific film stock emulations. The competitive battleground had shifted from "which app has better UX" to "which app has the filter I want." This means that for any product competing in this space, filter development velocity and asset quality matter more than feature depth.</p>
+        <div class="so-what">content strategy IS product strategy in this category. A roadmap focused on app features without a parallel filter content plan will underperform.</div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-bar bar-orange"></div>
+      <div>
+        <h4>AI features show materially higher monetization efficiency than equivalent non-AI features</h4>
+        <p>Across the generative AI sub-directions, revenue growth was consistently outpacing MAU growth — the opposite pattern from most traditional editing categories. Users demonstrated clear willingness to pay a premium for AI-generated outputs that they perceive as beyond their own capability. This monetization efficiency gap between AI and non-AI features is the most significant structural finding of the analysis.</p>
+        <div class="so-what">AI features should be positioned as premium conversion drivers, not free engagement hooks. The monetization ceiling for AI features is meaningfully higher than for traditional editing equivalents.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- IMPACT -->
+  <div class="section-tag">Section 07 · Business Impact</div>
+  <div class="section-title">How the Analysis Changed Decisions</div>
+
+  <div class="impact-statement">
+    <p>The Impossible Triangle framework surfaced <strong>AI creative play features</strong> as the one sub-direction achieving simultaneous top-performance across all three growth dimensions. This directly informed the product roadmap decision to <em>prioritize AI generative feature development</em> as the primary investment — shifting resources away from incremental iteration on traditional editing capabilities, where the market data showed structural ceilings rather than growth opportunity.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SKILLS -->
+  <div class="section-tag">Section 08 · Skills Demonstrated</div>
+  <div class="section-title">What This Project Shows</div>
+
+  <div class="skills-grid">
+    <div class="skills-block">
+      <h4>Analytical</h4>
+      <div class="skill-list">
+        <div class="skill-item"><div class="skill-dot dot-a"></div>Original framework design (not just applying existing methods)</div>
+        <div class="skill-item"><div class="skill-dot dot-a"></div>Multi-dimensional competitive analysis across 690+ products</div>
+        <div class="skill-item"><div class="skill-dot dot-a"></div>Market segmentation with user-intent based taxonomy</div>
+        <div class="skill-item"><div class="skill-dot dot-a"></div>Growth vector decomposition (acquisition / engagement / monetization)</div>
+        <div class="skill-item"><div class="skill-dot dot-a"></div>Portfolio gap analysis against competitive landscape</div>
+      </div>
+    </div>
+    <div class="skills-block">
+      <h4>Technical & Cross-functional</h4>
+      <div class="skill-list">
+        <div class="skill-item"><div class="skill-dot dot-b"></div>External data extraction and pipeline (SensorTower)</div>
+        <div class="skill-item"><div class="skill-dot dot-b"></div>Large-scale data cleaning and normalization</div>
+        <div class="skill-item"><div class="skill-dot dot-b"></div>Cross-market research coordination (7 regional teams)</div>
+        <div class="skill-item"><div class="skill-dot dot-b"></div>Translating quantitative findings into strategic recommendations</div>
+        <div class="skill-item"><div class="skill-dot dot-b"></div>Delivering analysis that directly moved product roadmap decisions</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="doc-footer">
+  <span>Analytics Portfolio · Global Mobile Imaging Market Analysis 2025</span>
+  <span>Methodology only · All proprietary figures anonymized</span>
+</div>
+
+</body>
+</html>
